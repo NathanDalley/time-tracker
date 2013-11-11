@@ -132,7 +132,11 @@ INSTALLED_APPS = (
      'django.contrib.admindocs',
      
      #My apps
-     'timekeeper'
+     'timekeeper',
+     'accounts',
+
+     #otherstuff
+     'bootstrap3'
 
      )
 

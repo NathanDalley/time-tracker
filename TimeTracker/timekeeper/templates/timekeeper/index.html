@@ -1,0 +1,39 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block title %}Placeholder{% endblock %}
+
+{% block content %}
+<P xmlns="http://www.w3.org/1999/html">
+<h3>Just a placeholder page</h3>
+</p>
+
+<div ng-app="timekeeper">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="{% static "timekeeper-ng.js" %}">    </script>
+
+    {% verbatim %}
+
+    <div class="row">
+        <div class="col-md-4"></div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                <div ng-controller="TimeKeeperController">
+                    <div>{{ theHours }}:{{ theMinutes }}.{{ theSeconds }}</div>
+                    <Button id="theButton" ng-click="update()">Ready to Work!</Button>
+                    <P>{{ stuff }}</P>
+                    Start Time: {{ today }}</br>
+                    Current Time: {{current}}</br>
+                    Different:  {{ theDiff }}</br>
+                    {{ startTime }}
+                    <hr/>
+                    <!--Date format: <input ng-model="format"></br>-->
+                    Current time is: <span the-Timer="format"></span>
+                    {{ stuff }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endverbatim %}
+{% endblock %}

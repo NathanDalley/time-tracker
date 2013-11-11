@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from django.views.generic import TemplateView
+from django.http import HttpResponseRedirect
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -14,8 +14,10 @@ v1_api.register(TimeUnitResource())
 
 
 urlpatterns = patterns('',
-    url(r'^$', TemplateView.as_view(template_name="index.html")),
-    url(r'^time/', include('timekeeper.urls'), "format: json"),
+    #url(r'^$', TemplateView.as_view(template_name="index.html")),
+    url(r'^$', lambda x: HttpResponseRedirect('/time/'), name="index"),
+    url(r'^accounts', include('accounts.urls', namespace="accounts")),
+    url(r'^time/', include('timekeeper.urls')),
     url(r'^api/', include(v1_api.urls)),
 
     # Examples:
