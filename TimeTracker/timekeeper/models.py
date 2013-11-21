@@ -32,10 +32,10 @@ class TimeUnit(models.Model):
 
     def __unicode__(self):
         if self.isComplete():
-            return "time: " + self.duration().__str__()
+            return self.user.username + ": " + self.duration().__str__()
 
         if self.isCheckedIn():
-            return "At Work"
+            return self.user.username + ": At Work"
 
         return "wut?"
 

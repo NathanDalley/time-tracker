@@ -67,6 +67,8 @@ STATIC_ROOT = ''
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
+STATIC_NG_URL = 'static/app/'
+
 # Additional locations of static files
 STATICFILES_DIRS = (
     "c:/home_dir/time-tracker/TimeTracker/static/",
@@ -80,7 +82,7 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
 ADMIN_MEDIA_PREFIX = (
