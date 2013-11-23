@@ -21,15 +21,15 @@
     <file path="/settings.py" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384338685280" ignored="false" />
     <file path="$PROJECT_DIR$/accounts/templates/accounts/index.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384067321694" ignored="false" />
     <file path="/login.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384067844548" ignored="false" />
-    <file path="/timekeeper-ng.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1385031394874" ignored="false" />
+    <file path="/timekeeper-ng.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1385168434528" ignored="false" />
     <file path="/directives.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384420776564" ignored="false" />
     <file path="/start_script.py" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384420646142" ignored="false" />
-    <file path="/services.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1385025786327" ignored="false" />
-    <file path="/controllers.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1385027732412" ignored="false" />
+    <file path="/services.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1385106798995" ignored="false" />
+    <file path="/controllers.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1385107363451" ignored="false" />
     <file path="/main.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384559508011" ignored="false" />
     <file path="/ListUsers.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384578845652" ignored="false" />
     <file path="/MyState.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384848503449" ignored="false" />
-    <file path="/Main.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1385026860840" ignored="false" />
+    <file path="/Main.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1385167600336" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,19 +67,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="timekeeper-ng.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="timekeeper-ng.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/app/js/timekeeper-ng.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="31" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.5607798">
+            <state line="101" column="71" selection-start="3399" selection-end="3399" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/app/partials/Main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="28" selection-start="258" selection-end="265" vertical-scroll-proportion="0.0">
+            <state line="1" column="92" selection-start="139" selection-end="139" vertical-scroll-proportion="0.020094562">
               <folding />
             </state>
           </provider>
@@ -88,7 +88,7 @@
       <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/app/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="0" selection-start="2026" selection-end="2026" vertical-scroll-proportion="0.0">
+            <state line="79" column="6" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,16 +97,7 @@
       <file leaf-file-name="api.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/timekeeper/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="36" selection-start="1839" selection-end="1841" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListUsers.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/app/partials/ListUsers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+            <state line="44" column="48" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,10 +112,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ListUsers.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/app/partials/ListUsers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/app/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
+            <state line="38" column="0" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,9 +161,9 @@
         <option value="$PROJECT_DIR$/timekeeper/models.py" />
         <option value="$PROJECT_DIR$/timekeeper/api.py" />
         <option value="$PROJECT_DIR$/static/app/partials/MyState.html" />
-        <option value="$PROJECT_DIR$/static/app/partials/Main.html" />
         <option value="$PROJECT_DIR$/static/app/js/services.js" />
         <option value="$PROJECT_DIR$/static/app/js/controllers.js" />
+        <option value="$PROJECT_DIR$/static/app/partials/Main.html" />
         <option value="$PROJECT_DIR$/static/app/js/timekeeper-ng.js" />
       </list>
     </option>
@@ -219,6 +219,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -251,111 +252,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settings.ide.settings.uml" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="reference.settings.ide.settings.uml" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -398,29 +308,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TimeTracker" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -442,6 +329,29 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TimeTracker" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -544,14 +454,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29669157" sideWeight="0.7995546" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3361793" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -668,37 +578,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timekeeper/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="36" selection-start="1839" selection-end="1841" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="38" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/app/partials/MyState.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/app/partials/ListUsers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timekeeper/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -710,30 +592,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/app/partials/Main.html">
+    <entry file="file://$PROJECT_DIR$/static/app/partials/MyState.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="258" selection-end="265" vertical-scroll-proportion="0.0">
+        <state line="2" column="8" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timekeeper/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="48" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timekeeper/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/app/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0">
+        <state line="38" column="0" selection-start="917" selection-end="917" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="38" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/app/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2026" selection-end="2026" vertical-scroll-proportion="0.0">
+        <state line="79" column="6" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/app/js/timekeeper-ng.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="31" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.5607798">
+        <state line="101" column="71" selection-start="3399" selection-end="3399" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/app/partials/Main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="92" selection-start="139" selection-end="139" vertical-scroll-proportion="0.020094562">
           <folding />
         </state>
       </provider>

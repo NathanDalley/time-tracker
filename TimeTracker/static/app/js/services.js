@@ -28,7 +28,7 @@ ttService.factory('MyState', ['$resource','$http',
 
      var myState ="";
 
-     var update = function(){
+     var API = function(){
          return $resource('/api/v1/mystate/', {}, {
               update: {
                   method:'GET',
@@ -52,7 +52,7 @@ ttService.factory('MyState', ['$resource','$http',
 
      return {
          myState: myState,
-         update: update
+         API: API
      }
 
 

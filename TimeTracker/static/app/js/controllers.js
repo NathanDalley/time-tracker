@@ -1,9 +1,11 @@
 app.controller('MainController', ['$scope', 'MyState', function($scope, MyState){
     var statePromise = "";
 
+
     /**
      * Get the updated State and Set the scope variables
      */
+
     $scope.update = function(){
         statePromise = MyState.update();
 
