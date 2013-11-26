@@ -31,7 +31,7 @@ class MyStateResource(ModelResource):
     class Meta:
         queryset = TimeUnit.objects.all()
         resource_name = 'mystate'
-        allowed_methods = ['get']
+        allowed_methods = ['get', 'put']
         include_resource_uri = False
 
     def get_object_list(self, request):
@@ -46,6 +46,12 @@ class MyStateResource(ModelResource):
             return True
 
         return False
+
+    def hydrate(self, bundle):
+        logging.error("BOOYA")
+        super(MyStateResource, self).hydrate(bundle)
+    #def obj_create(self, bundle, **kwargs):
+     #   logging.error("Obj Creating method!!")
 
     '''def dehydrate(self, bundle):
         return bundle'''

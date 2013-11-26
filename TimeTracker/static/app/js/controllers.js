@@ -5,9 +5,8 @@ app.controller('MainController', ['$scope', 'MyState', function($scope, MyState)
     /**
      * Get the updated State and Set the scope variables
      */
-
     $scope.update = function(){
-        statePromise = MyState.update();
+        statePromise = MyState.getState();
 
         statePromise.$promise.then(function(result){
             $scope.state = statePromise.state;
@@ -15,8 +14,18 @@ app.controller('MainController', ['$scope', 'MyState', function($scope, MyState)
             $scope.chkOut = statePromise.checkedOut;
 
             $scope.myState = statePromise;
+            console.log("Ding");
         });
 
+    }
+
+    $scope.toggleState = function(){
+
+        statePromise.checkedOut = new Date();
+        statePromise.$toggleState();
+
+        //$scope.myState.checkedOut = new Date();
+        //$scope.myState.save();
     }
 
     $scope.update();

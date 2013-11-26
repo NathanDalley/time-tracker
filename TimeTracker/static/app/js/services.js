@@ -62,20 +62,37 @@ ttService.factory('MyState', ['$resource','$http',
 
 ttService.factory('MyState', ['$resource','$http',
   function($resource, $http){
-    return $resource('/api/v1/mystate/', {}, {
-      update: {
+    return $resource('/api/v1/mystate/:tuid', {}, {
+      getState: {
           method:'GET',
-          params:{},
           isArray:false,
           transformResponse: $http.defaults.transformResponse.concat([
                 function (data, headersGetter) {
+                    console.log(data);
                     var obj = angular.fromJson(data);
                     var result = obj.objects;
 
                     return result[0];
                 }
           ])
+      },
+      toggleState:{
+          method:'PUT',
+          params: {tuid: '@id'},
+          transformRequest: function(obj){
+              console.log("1" + obj);
+              var thing = {};
+              thing.data = {};
+              thing.data.objects = [obj];
+
+              console.log("2: " + JSON.stringify(thing))
+              return JSON.stringify(thing);
+          }
+      },
+      stuff:{
+          method: 'PUT'
       }
+
     });
   }]);
 

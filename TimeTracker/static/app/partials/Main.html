@@ -1,16 +1,19 @@
 Current time is: <span the-Timer></span><br />
 Current time is: <new-Timer start-Time="{{ chkIn }}" end-Time="{{ chkOut }}" state="{{ state }}"></new-Timer><br />
-<P><H3>Values in controller</H3><br />
-<button ng-click="update()">Update</button><br />
-State: {{ state }}<br />
-Checked In: {{ chkIn }}<br />
-Checked Out: {{ chkOut }}<br />
-</P>
-<h3>myState: </h3>{{ myState }}<br />
-<p>
+<button ng-click="toggleState()">Stop/Start</button><br />
 
-<h3>Stuff: </h3>{{ stuff }}<br />
-<p>
-<h3>Junk: </h3>
-<pre><code>{{ junk }}</code></pre>
-and then
+<pre><code>
+    <H3>Values in controller</H3><br />
+    <button ng-click="update()">Update</button><br />
+    State: {{ state }}<br />
+    Checked In: {{ chkIn }}<br />
+    Checked Out: {{ chkOut }}<br />
+
+    <h3>myState: </h3>{{ myState }}<br />
+
+
+    <h3>Stuff: </h3>{{ stuff }}<br />
+
+    <h3>Junk: </h3>
+    {{ junk }}
+</code></pre>
