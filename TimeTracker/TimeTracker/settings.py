@@ -12,7 +12,8 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'c:/home_dir/time-tracker/TimeTracker/timetracker/db/db.db',                      # Or path to database file if using sqlite3.
+        #'NAME': 'c:/home_dir/time-tracker/TimeTracker/timetracker/db/db.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/home/action/workspace/time-tracker/TimeTracker/TimeTracker/db/db.db',
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -72,6 +73,7 @@ STATIC_NG_URL = 'static/app/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
+     "/home/action/workspace/time-tracker/TimeTracker/static/",
     "c:/home_dir/time-tracker/TimeTracker/static/",
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
@@ -116,7 +118,8 @@ ROOT_URLCONF = 'TimeTracker.urls'
 WSGI_APPLICATION = 'TimeTracker.wsgi.application'
 
 TEMPLATE_DIRS = (
-    "c:/home_dir/time-tracker/TimeTracker/templates/"
+    "c:/home_dir/time-tracker/TimeTracker/templates/",
+    "/home/action/workspace/time-tracker/TimeTracker/templates/"
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

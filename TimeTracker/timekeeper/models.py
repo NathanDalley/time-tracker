@@ -30,6 +30,12 @@ class TimeUnit(models.Model):
         else:
             return 0
 
+    def __init__(self, *args, **kwargs):
+        super(TimeUnit, self).__init__(*args, **kwargs)
+        self.checkIn()
+
+        
+    '''
     def __unicode__(self):
         if self.isComplete():
             return self.user.username + ": " + self.duration().__str__()
@@ -38,7 +44,5 @@ class TimeUnit(models.Model):
             return self.user.username + ": At Work"
 
         return "wut?"
+'''
 
-    def __init__(self, *args, **kwargs):
-        super(TimeUnit, self).__init__(*args, **kwargs)
-        self.checkIn()

@@ -49,6 +49,7 @@ class MyStateResource(ModelResource):
 
     def hydrate(self, bundle):
         logging.error("BOOYA")
+        logging.error(bundle)
         super(MyStateResource, self).hydrate(bundle)
     #def obj_create(self, bundle, **kwargs):
      #   logging.error("Obj Creating method!!")
