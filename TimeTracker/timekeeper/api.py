@@ -1,8 +1,10 @@
 # myapp/api.py
 from tastypie import fields, utils
 from tastypie.resources import ModelResource, Resource
+from tastypie.authorization import DjangoAuthorization
 from timekeeper.models import TimeUnit
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 
 import logging
@@ -33,9 +35,18 @@ class MyStateResource(ModelResource):
         resource_name = 'mystate'
         allowed_methods = ['get', 'put']
         include_resource_uri = False
+        authorization = DjangoAuthorization()
+        always_return_data = True
 
     def get_object_list(self, request):
         data = super(MyStateResource, self).get_object_list(request).filter(user=request.user.id)
+
+        #If they've completed this time unit, create and return a new empty one
+        #if False and data.filter(pk=data.latest('checkedIn').id)[0].isComplete():
+        #    new_timeunit = TimeUnit()
+        #    new_timeunit.user = request.user
+        #    new_timeunit.save()
+
         return data.filter(pk=data.latest('checkedIn').id)
 
     def determine_format(self, request):
@@ -46,18 +57,26 @@ class MyStateResource(ModelResource):
             return True
 
         return False
+'''
+    def hydrate_checkedOut(self, bundle):
+        logging.error(bundle.data['checkedOut'])
+        bundle.data['checkedOut'] = timezone.now()
 
+        return bundle
+'''
+'''
     def hydrate(self, bundle):
         logging.error("BOOYA")
-        logging.error(bundle)
+        logging.error(bundle.data)
         super(MyStateResource, self).hydrate(bundle)
-    #def obj_create(self, bundle, **kwargs):
-     #   logging.error("Obj Creating method!!")
+        #logging.error(bundle)
+'''
 
-    '''def dehydrate(self, bundle):
-        return bundle'''
 
-    '''def authorized_read_list(self, object_list, bundle):
+
+
+'''
+    def authorized_read_list(self, object_list, bundle):
         return object_list.filter(id=bundle.request.user.id)'''
 
 

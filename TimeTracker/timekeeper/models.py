@@ -7,7 +7,7 @@ from django.utils import timezone
 
 class TimeUnit(models.Model):
     user = models.ForeignKey(User)
-    checkedIn = models.DateTimeField()
+    checkedIn = models.DateTimeField(auto_now_add=True)
     checkedOut = models.DateTimeField(blank=True, null=True)
 
     def isComplete(self):
@@ -34,8 +34,6 @@ class TimeUnit(models.Model):
         super(TimeUnit, self).__init__(*args, **kwargs)
         self.checkIn()
 
-        
-    '''
     def __unicode__(self):
         if self.isComplete():
             return self.user.username + ": " + self.duration().__str__()
@@ -44,5 +42,5 @@ class TimeUnit(models.Model):
             return self.user.username + ": At Work"
 
         return "wut?"
-'''
+
 

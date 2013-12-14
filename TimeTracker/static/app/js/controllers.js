@@ -14,7 +14,7 @@ app.controller('MainController', ['$scope', 'MyState', function($scope, MyState)
             $scope.chkOut = statePromise.checkedOut;
 
             $scope.myState = statePromise;
-            console.log("Ding");
+            //console.log("Ding");
         });
 
     }
@@ -23,6 +23,9 @@ app.controller('MainController', ['$scope', 'MyState', function($scope, MyState)
 
         statePromise.checkedOut = new Date();
         statePromise.$toggleState();
+
+        //TODO. Work out if we need to set a stop time
+        //TODO. Work out if we need to create a new TimeUnit
 
         //$scope.myState.checkedOut = new Date();
         //$scope.myState.save();

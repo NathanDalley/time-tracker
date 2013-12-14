@@ -51,17 +51,17 @@ app.config(['$routeProvider', function ($routeProvider) {
 
                   attrs.$observe('startTime', function(value) {
                       startTime = new Date(value);
-                      console.log("Start:" + startTime);
+                      //console.log("Start:" + startTime);
                   });
 
                   attrs.$observe('endTime', function(value) {
                       endTime = new Date(value);
-                      console.log("End:" + endTime);
+                      //console.log("End:" + endTime);
                   });
 
                   attrs.$observe('state', function(value) {
                       state = (value === 'true');
-                      console.log("State:" + state);
+                      //console.log("State:" + state);
                       if(state){
                           updateLater();
                       }
@@ -140,7 +140,7 @@ app.config(['$routeProvider', function ($routeProvider) {
           if($scope.myState){
             startTime = $scope.myState.checkedIn;
           }
-          console.log(startTime);
+          //console.log(startTime);
       })
 
 

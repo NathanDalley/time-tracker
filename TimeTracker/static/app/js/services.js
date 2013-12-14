@@ -62,7 +62,7 @@ ttService.factory('MyState', ['$resource','$http',
 
 ttService.factory('MyState', ['$resource','$http',
   function($resource, $http){
-    return $resource('/api/v1/mystate/:tuid', {}, {
+    return $resource('/api/v1/mystate/:tuid/', {}, {
       getState: {
           method:'GET',
           isArray:false,
@@ -80,12 +80,15 @@ ttService.factory('MyState', ['$resource','$http',
           method:'PUT',
           params: {tuid: '@id'},
           transformRequest: function(obj){
-              console.log("1" + obj);
+              console.log("1");
+              console.log(obj);
               var thing = {};
-              thing.data = {};
-              thing.data.objects = [obj];
+              //thing.data = obj;
+              //thing.data.objects = [obj];
+              thing = obj;
 
-              console.log("2: " + JSON.stringify(thing))
+              console.log("2");
+              console.log(JSON.stringify(thing));
               return JSON.stringify(thing);
           }
       },
