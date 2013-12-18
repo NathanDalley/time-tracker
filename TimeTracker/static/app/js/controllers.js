@@ -1,3 +1,6 @@
+/**  Main Page Controller
+ *
+ */
 app.controller('MainController', ['$scope', 'MyState', function($scope, MyState){
     var statePromise = "";
 
@@ -35,7 +38,10 @@ app.controller('MainController', ['$scope', 'MyState', function($scope, MyState)
 
 }]);
 
-
+/**  List Users Controller
+*   Quick debug page to show a list of users
+*
+*/
 app.controller('ListUsersController', ['$scope', 'UserList', function($scope, UserList){
     var theData = UserList.getList();
     $scope.junk = theData;
@@ -43,10 +49,10 @@ app.controller('ListUsersController', ['$scope', 'UserList', function($scope, Us
 }]);
 
 
-app.controller('MyStateController', ['$scope', 'MyState', function($scope, MyState){
-    var theData = MyState.getCurrentState();
-    $scope.junk = theData;
-    $scope.eatit = theData.checkedIn
+app.controller('MyStateController', ['$scope', 'TimerService', function($scope, TimerService){
+    TimerService.start();
+    $scope.junk = "";
+    $scope.eatit = "";
 }]);
 
 
