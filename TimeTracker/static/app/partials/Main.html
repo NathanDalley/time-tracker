@@ -1,18 +1,20 @@
-Current time is: <span the-Timer></span><br />
-Current time is: <new-Timer start-Time="{{ chkIn }}" end-Time="{{ chkOut }}" state="{{ state }}"></new-Timer><br />
-<button ng-click="toggleState()">Stop/Start</button><br />
+Current time is: <new-Timer start-Time="{{ timer.startTime }}" end-Time="{{ timer.endTime }}" state="{{ timer.state }}"></new-Timer><br />
 
+<button ng-hide="timer.state" ng-click="start()">Start</button>
+<button ng-show="timer.state" ng-click="stop()">Stop</button>
+
+<P>&nbsp;</P>
 <br />
     Debug <input type="checkbox" ng-model="showDebug">
     <div ng-show="showDebug">
         <pre><code>
             <H3>DEBUG Woo!@</H3><br />
             <button ng-click="update()">Update</button><br />
-            State: {{ state }}<br />
-            Checked In: {{ chkIn }}<br />
-            Checked Out: {{ chkOut }}<br />
+            State: {{ timer.state }}<br />
+            Checked In: {{ timer.startTime }}<br />
+            Checked Out: {{ timer.endTime }}<br />
 
-            <h3>myState: </h3>{{ myState }}<br />
+            <h3>myState: </h3>{{ timer }}<br />
 
 
             <h3>Stuff: </h3>{{ stuff }}<br />

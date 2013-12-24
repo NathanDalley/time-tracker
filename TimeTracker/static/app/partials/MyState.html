@@ -1,3 +1,12 @@
 <H3>My State</H3><br />
+{{ myState.state }}<p />
+
+Current time is: <new-Timer start-Time="{{ myState.state.startTime }}" end-Time="{{ myState.state.endTime }}" state="{{ myState.state.state }}"></new-Timer><br />
+
+<button ng-click="start()">Start</button><br/>
+<button ng-click="stop()">Stop</button><br/>
+<button ng-click="update()">Update</button><br/>
+<button ng-click="bam()">Update</button><br/>
+
 {{ junk }}<br>
 {{ eatit }}

@@ -1,40 +1,14 @@
 /**  Main Page Controller
  *
  */
-app.controller('MainController', ['$scope', 'MyState', function($scope, MyState){
-    var statePromise = "";
+app.controller('MainController', ['$scope', 'TimerService', function($scope, TimerService){
 
+    TimerService.init();
+    $scope.timer = TimerService.state;
 
-    /**
-     * Get the updated State and Set the scope variables
-     */
-    $scope.update = function(){
-        statePromise = MyState.getState();
+    $scope.start = TimerService.start;
+    $scope.stop = TimerService.stop;
 
-        statePromise.$promise.then(function(result){
-            $scope.state = statePromise.state;
-            $scope.chkIn = statePromise.checkedIn;
-            $scope.chkOut = statePromise.checkedOut;
-
-            $scope.myState = statePromise;
-            //console.log("Ding");
-        });
-
-    }
-
-    $scope.toggleState = function(){
-
-        statePromise.checkedOut = new Date();
-        statePromise.$toggleState();
-
-        //TODO. Work out if we need to set a stop time
-        //TODO. Work out if we need to create a new TimeUnit
-
-        //$scope.myState.checkedOut = new Date();
-        //$scope.myState.save();
-    }
-
-    $scope.update();
 
 }]);
 
@@ -50,8 +24,18 @@ app.controller('ListUsersController', ['$scope', 'UserList', function($scope, Us
 
 
 app.controller('MyStateController', ['$scope', 'TimerService', function($scope, TimerService){
-    TimerService.start();
-    $scope.junk = "";
+    TimerService.init();
+    $scope.myState = TimerService;
+
+    $scope.start = TimerService.start;
+    $scope.stop = TimerService.stop;
+
+
+    $scope.update = function(){
+        console.log(JSON.stringify(TimerService.state))
+    }
+
+
     $scope.eatit = "";
 }]);
 

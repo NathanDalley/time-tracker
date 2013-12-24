@@ -10,26 +10,11 @@
     <list default="true" id="7a1da289-da4c-490d-a94d-72d86756a77d" name="Default" comment="" />
     <ignored path="TimeTracker.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/models.py" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1386384913376" ignored="false" />
-    <file path="/admin.py" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384043296534" ignored="false" />
-    <file path="/urls.py" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384339768015" ignored="false" />
-    <file path="/api.py" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1386386471928" ignored="false" />
-    <file path="/index.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1387352944290" ignored="false" />
-    <file path="/timetracker.css" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384063563098" ignored="false" />
-    <file path="/timetracker-ng.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384064186213" ignored="false" />
-    <file path="/base.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384584990504" ignored="false" />
-    <file path="/settings.py" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1386383707064" ignored="false" />
-    <file path="$PROJECT_DIR$/accounts/templates/accounts/index.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384067321694" ignored="false" />
-    <file path="/login.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384067844548" ignored="false" />
-    <file path="/timekeeper-ng.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1385168434528" ignored="false" />
-    <file path="/directives.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384420776564" ignored="false" />
-    <file path="/start_script.py" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384420646142" ignored="false" />
-    <file path="/services.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1387355768414" ignored="false" />
-    <file path="/controllers.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1387355415646" ignored="false" />
-    <file path="/main.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384559508011" ignored="false" />
-    <file path="/ListUsers.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384578845652" ignored="false" />
-    <file path="/MyState.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1384848503449" ignored="false" />
-    <file path="/Main.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1387353339758" ignored="false" />
+    <file path="/services.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1387848720502" ignored="false" />
+    <file path="/MyState.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1387847976594" ignored="false" />
+    <file path="/Main.html" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1387848598245" ignored="false" />
+    <file path="/controllers.js" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1387848285576" ignored="false" />
+    <file path="/api.py" changelist="7a1da289-da4c-490d-a94d-72d86756a77d" time="1387849318933" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,19 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="directives1.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/app/js/directives1.js">
+      <file leaf-file-name="MyState.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/app/partials/MyState.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="10" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/app/js/controllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="25" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.0">
+            <state line="3" column="139" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,20 +55,43 @@
       <file leaf-file-name="Main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/app/partials/Main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1387353342556" expanded="true" signature="313:741" placeholder="..." />
-                <marker date="1387353342556" expanded="true" signature="327:730" placeholder="..." />
-                <marker date="1387353342556" expanded="true" signature="333:724" placeholder="..." />
-              </folding>
+            <state line="15" column="0" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="directives1.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/app/js/directives1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="38" selection-start="2609" selection-end="2620" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/app/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/app/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="18" selection-start="665" selection-end="665" vertical-scroll-proportion="0.38990825">
+            <state line="148" column="37" selection-start="4462" selection-end="4462" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/timekeeper/templates/timekeeper/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,11 +106,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timekeeper/templates/timekeeper/index.html">
+      <file leaf-file-name="api.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/timekeeper/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="941" selection-end="941" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="42" column="9" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.25344038">
+              <folding>
+                <element signature="e#15#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,17 +132,17 @@
         <option value="$PROJECT_DIR$/TimeTracker/urls.py" />
         <option value="$PROJECT_DIR$/templates/base/base.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/tmpRestClientResponse6378340146981794014.json" />
-        <option value="$PROJECT_DIR$/static/app/partials/MyState.html" />
         <option value="$PROJECT_DIR$/TimeTracker/settings.py" />
-        <option value="$PROJECT_DIR$/timekeeper/api.py" />
         <option value="$PROJECT_DIR$/timekeeper/models.py" />
         <option value="$PROJECT_DIR$/static/app/js/timekeeper-ng.js" />
         <option value="$PROJECT_DIR$/static/app/js/directives.js" />
         <option value="$PROJECT_DIR$/static/app/js/directives1.js" />
-        <option value="$PROJECT_DIR$/static/app/partials/Main.html" />
         <option value="$PROJECT_DIR$/timekeeper/templates/timekeeper/index.html" />
+        <option value="$PROJECT_DIR$/static/app/partials/MyState.html" />
+        <option value="$PROJECT_DIR$/static/app/partials/Main.html" />
         <option value="$PROJECT_DIR$/static/app/js/controllers.js" />
         <option value="$PROJECT_DIR$/static/app/js/services.js" />
+        <option value="$PROJECT_DIR$/timekeeper/api.py" />
       </list>
     </option>
   </component>
@@ -326,20 +327,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TimeTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -379,47 +366,7 @@
   <component name="RestClientSettings">
     <option name="LAST_HOST" value="http://localhost:80/" />
   </component>
-  <component name="RunManager" selected="Django server.TimeTracker">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TimeTracker" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TimeTracker" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -431,7 +378,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TimeTracker" />
+      <module name="" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -441,32 +388,6 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TimeTracker" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="TimeTracker" type="Python.DjangoServer" factoryName="Django server">
@@ -550,13 +471,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28762007" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20757738" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -625,12 +547,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/timekeeper/api.py</url>
-          <line>2</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
@@ -638,11 +554,6 @@
     <entry file="file://$PROJECT_DIR$/static/app/partials/ListUsers.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/app/partials/MyState.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TimeTracker/urls.py">
@@ -655,13 +566,6 @@
     <entry file="file://$PROJECT_DIR$/TimeTracker/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="0" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/timekeeper/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="53" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timekeeper/admin.py">
@@ -691,24 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/timekeeper/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/app/partials/Main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1387353342556" expanded="true" signature="313:741" placeholder="..." />
-            <marker date="1387353342556" expanded="true" signature="327:730" placeholder="..." />
-            <marker date="1387353342556" expanded="true" signature="333:724" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/app/js/timekeeper-ng.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
@@ -718,22 +604,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/app/js/directives1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+        <state line="78" column="38" selection-start="2609" selection-end="2620" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/app/partials/MyState.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="139" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/app/partials/Main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="640" selection-end="640" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/app/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="25" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.0">
+        <state line="37" column="0" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/app/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="665" selection-end="665" vertical-scroll-proportion="0.38990825">
+        <state line="148" column="37" selection-start="4462" selection-end="4462" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timekeeper/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timekeeper/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="9" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.25344038">
+          <folding>
+            <element signature="e#15#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

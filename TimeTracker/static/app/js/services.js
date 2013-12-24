@@ -4,41 +4,174 @@ var ttService = angular.module('ttService', ['ngResource','ng']);
  * This service will contain the current known state of the users timer.
  * It will manage any updates that are required and should be treated as a single point of reference for the app
  */
-ttService.factory('TimerService', ['$resource', '$http', function($resource, $http){
+ttService.factory('TimerService', ['$resource', '$http', '$timeout', function($resource, $http, $timeout){
 
     var mystateRes = $resource('/api/v1/mystate/');
-    var timeUnit = $resource('/api/v1/timeunit/:id');
+    var timeUnit = $resource('/api/v1/timeunit/:id', null,
+        {
+            'update': {method: 'PUT'}
+        }
+    );
+
 
     var myState = {
         startTime: "",
         endTime: "",
-        state: false  //convenience method
+        state: false,  //convenience method
+        id: 0
     };
 
 
     function updateState(){
         var tmp = mystateRes.get();
-        tmp.$then();
-        debugger;
-        console.log(JSON.stringify(tmp));
+        //console.log(tmp);
+        tmp.$promise.then(function(){
+            myState.startTime = tmp.objects[0].checkedIn;
+            myState.endTime = tmp.objects[0].checkedOut;
+            myState.state = tmp.objects[0].state;
+            myState.id = tmp.objects[0].id;
+        },
+        function(){
+            console.log("fail");
+        },
+        function(){
+            console.log("tick");
+        });
+
+        return tmp;
+    }
+
+    /** _start
+     *  Tells the server to 'start' the timer on the server.
+     *
+     *  In this case it creates a new TimeUnit object with the current start date
+     *  and posts it to the REST service
+     *
+     *  returns a boolean to signal success or failure
+     *  This allows us to update the controller/view accordingly
+     *
+     * @returns {boolean}
+     * @private
+     */
+    function _start(){
+        var tmp = new timeUnit();
+        tmp.startTime = new Date();
+        tmp.$save({}, function(res){
+            return true; // If function reports a success
+        },function(res){
+            return false; // If it reports an error
+        });
+
+        return tmp;
+    }
+
+    /** _stop
+     * Tells the server to 'stop' the timer.
+     * It does this by getting the current state object and setting an End time
+     *
+     * Returns a boolean to signal that it was successful or failure.
+     * This allows us to update the controller/view accordingly
+     *
+     * @returns {boolean}
+     * @private
+     */
+    function _stop(){
+        var tmp = false;
+
+        if(myState.id != 0 && myState.state === true){
+            tmp = timeUnit.get({id: myState.id});
+            tmp.checkedOut = new Date();
+            timeUnit.update({id: myState.id}, tmp,
+                function(res){
+                    return true; // If function reports a success
+                },function(res){
+                    return false; // If it reports an error
+                }
+            );
+
+        }
+        else{
+            console.log("State not Initialized");
+        }
+
+        return tmp;
+
+    }
+
+    /** _getNewState
+     *  This function takes an object in the form of myState and keeps running updateState until myState is different
+     *  from the previous state.
+     *
+     *  NOTE: If you give it a reference to myState, it will never be different
+     *  try this:
+     *  var previousState = JSON.parse(JSON.stringify(myState));
+     *
+     * @param previousState
+     * @private
+     */
+    function _getNewState(previousState){
+        var t = $timeout(function(){
+            updateState();  //Get the state
+            _getNewState(previousState); // Get it again!
+        }, 500); // In 500 milliseconds!
+
+        //compare to new state.  Has it changed? Yes?  Great!  Cancel the timeout object!
+        if((previousState.id != myState.id) || (previousState.state != myState.state) ){
+            $timeout.cancel(t); // its different.  call off the loop!
+        }
 
     }
 
 
-
-
     var start = function(){
-        //@TODO: public method which starts the timer.  Should handle errors if cannot start
-        updateState();
 
+        var tmp = updateState();
+            tmp.$promise.finally(function(){
+            if(myState.state===false){
+                //get the previous state.  must be a copy, not a reference
+                var previousState = JSON.parse(JSON.stringify(myState));
+                if(_start()){
+                    _getNewState(previousState);
+                }
+                else{
+                    //_start reports an Error
+                    console.log("Error in _Start");
+                }
+            }
+            else{
+                console.log("Already Started");
+            }
+        });
     };
 
     var stop = function(){
-        //@TODO: public method which stops the timer.  Should handle errors if it cannot stop
+        updateState().$promise.finally(function(){
+            if(myState.state===true){
+                //get the previous sate
+                var previousState = JSON.parse(JSON.stringify(myState));
+                if(_stop()){ // if _stop was successful
+                    _getNewState(previousState);
+                }
+                else{
+                    console.log("Error in _stop");
+                }
+            }
+            else{
+                console.log("Already Stopped, you can't Stop this!");
+            }
+
+        });
+    };
+
+    var init = function(){
+        updateState().$promise.finally(function(){
+            console.log("Init");
+        });
     };
 
     return{
         state: myState,
+        init: init,
         start: start,
         stop: stop
     };
