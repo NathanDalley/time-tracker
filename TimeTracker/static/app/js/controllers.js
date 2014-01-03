@@ -44,7 +44,7 @@ app.controller('WeekController', ['$scope', '$resource', '$q', function($scope, 
 
     var today = new Date();
     var resources = [];   
-    var durations = []; 
+    $scope.durations = []; 
     
 
     //JS Date object considers Sunday to be the first day of the week.
@@ -79,25 +79,28 @@ app.controller('WeekController', ['$scope', '$resource', '$q', function($scope, 
         tmp[i] = resources[i].$promise;
     };
 
-    $scope.dayArray = [];
+    
     //When those promise objects are done, update the durations array.
     $q.all(tmp).then(function(val){
-        for (var i = 0; i < val.length; i++) {
-            
-            console.log(val[i].objects);
-            
-             /**           
-            for (var i = 0; i < val[i].length; i++) {
-                durations[i] = 0;
-                console.log("arse " + val[i].objects);
+        var tmp = [];
 
-                for (var j = 0; j < val[i].objects.length; j++) {
-                    console.log("arse: " + j);
+        for (var i = 0; i < val.length; i++) {
+            $scope.durations[i] = 0;
+            tmp = val[i].objects;
+            console.log(tmp);
+
+            if (tmp.length > 0) {
+                console.log("arse");
+
+                for (var j = 0; j < tmp.length; j++) {
+                    $scope.durations[i] = tmp.length;
+                    console.log(val[i].objects[j]);
+
                     //durations[i] = durations[i] + calcDuration($scope.dayArray[i].checkedIn, $scope.dayArray[i].checkedOut);
                 };
-
-            };*/
-
+            }else{
+                $scope.durations[i] = "empty";
+            }
 
         };
     });
@@ -139,7 +142,7 @@ app.controller('WeekController', ['$scope', '$resource', '$q', function($scope, 
     $scope.stuff = today.getDay();
     $scope.junk = dayOffset;
     $scope.crap = startDay;
-    $scope.durations = durations;
+//    $scope.durations = durations;
 
     $scope.header = "This Week";
 
