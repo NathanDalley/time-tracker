@@ -3,6 +3,13 @@ var ttService = angular.module('ttService', ['ngResource','ng']);
 /** TimerService
  * This service will contain the current known state of the users timer.
  * It will manage any updates that are required and should be treated as a single point of reference for the app
+ *
+ * Returns:
+ *      myState - an object which contains the current state of the current user.  bind to this.
+ *      init: init, - Run this to begin with.  Pre populates the myState object
+ *      start: start - Start the timer
+ *      stop: stop - Stop the timer
+ *
  */
 ttService.factory('TimerService', ['$resource', '$http', '$timeout', function($resource, $http, $timeout){
 

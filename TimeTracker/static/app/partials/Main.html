@@ -1,11 +1,17 @@
-Current time is: <new-Timer start-Time="{{ timer.startTime }}" end-Time="{{ timer.endTime }}" state="{{ timer.state }}"></new-Timer><br />
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="main pagination-centered">
+            <new-Timer start-Time="{{ timer.startTime }}" end-Time="{{ timer.endTime }}" state="{{ timer.state }}"></new-Timer><br />
 
-<button ng-hide="timer.state" ng-click="start()">Start</button>
-<button ng-show="timer.state" ng-click="stop()">Stop</button>
+            <button class="btn btn-default btn-lg" ng-hide="timer.state" ng-click="start()">Start</button>
+            <button class="btn btn-default btn-lg" ng-show="timer.state" ng-click="stop()">Stop</button>
+               
+        </div>
+    </div>
+</div>
 
-<P>&nbsp;</P>
-<br />
-    Debug <input type="checkbox" ng-model="showDebug">
+<div class="debugs">
+Debug <input type="checkbox" ng-model="showDebug">
     <div ng-show="showDebug">
         <pre><code>
             <H3>DEBUG Woo!@</H3><br />
@@ -23,3 +29,4 @@ Current time is: <new-Timer start-Time="{{ timer.startTime }}" end-Time="{{ time
             {{ junk }}
         </code></pre>
     </div>
+</div>  

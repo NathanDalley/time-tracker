@@ -21,6 +21,14 @@ app.config(['$routeProvider', function ($routeProvider) {
         controller: 'MyStateController',
         templateUrl: 'app/partials/MyState.html'
     })
+    .when('/Today', {
+        controller: 'TodayController',
+        templateUrl: 'app/partials/Today.html'
+    })
+    .when('/Week', {
+        controller: 'WeekController',
+        templateUrl: 'app/partials/Week.html'
+    })
 
     .otherwise({ redirectTo: '/' });
 

@@ -10,6 +10,8 @@ class TimeUnit(models.Model):
     checkedIn = models.DateTimeField(auto_now_add=True)
     checkedOut = models.DateTimeField(blank=True, null=True)
 
+    checkedIn.editable = True
+
     def isComplete(self):
         return self.checkedOut is not None
 

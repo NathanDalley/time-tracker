@@ -1,4 +1,60 @@
+  app.directive('timeObject', function(){
 
+    return {
+        restrict : 'E',
+        scope : {
+          timeUnit : '='
+        },
+        //template : 'Start: {{startTime}} End: {{endTime}} Duration {{duration}}',
+        templateUrl : '/static/app/templates/timeunitobject.html',
+        link : link
+    }
+
+    function link(scope, element, attrs){
+      var start = new Date(scope.timeUnit.checkedIn);
+      var end = new Date(scope.timeUnit.checkedOut);
+
+      //debugger;
+
+      scope.startTime = start.toLocaleTimeString();
+      scope.endTime = end.toLocaleTimeString();
+      
+
+      var difference_ms = end - start;
+
+      difference_ms = difference_ms/1000;
+      var seconds = Math.floor(difference_ms % 60);
+      difference_ms = difference_ms/60;
+      var minutes = Math.floor(difference_ms % 60);
+      difference_ms = difference_ms/60;
+      var hours = Math.floor(difference_ms);
+
+      scope.duration = hours +  ":" + minutes + ":" + seconds;
+
+    }
+
+
+  });
+
+/**
+* Test Directive
+*/
+  app.directive('shit', function(){
+    return {
+      restrict : 'E',
+      scope : {
+        type : '@'
+      },
+      template : 'shit {{type}}',
+      link : link
+    }
+
+    function link(scope, element,attrs){
+      console.log("initializing shit");
+      var start = new Date();
+    }
+
+  });
 
 
   app.directive('newTimer', function($timeout, dateFilter) {

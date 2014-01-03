@@ -1,0 +1,64 @@
+.main new-timer{
+	color: rgb(42, 182, 23);
+	font-size: 48px;
+	position: relative;
+	padding-top: 10px;
+}
+
+.main{
+	color: black;
+}
+
+.main button{
+	float: left;
+	width: 200px;
+}
+
+.tu{
+	background: white;
+	height: 70px;
+}
+
+.tu-header {
+	color: grey;
+	position: relative;
+	top : -10px;
+}
+
+.tu-data{
+	font-weight: bold;
+	font-size: 14pt;
+	color: black;
+	position: relative;
+	top : 10px;
+	left: -40px;
+}
+
+.tu-header-duration {
+	color: black;
+	font-weight: bolder;
+	font-size: 10pt;
+	position: relative;
+	
+}
+
+.tu-data-duration{
+	font-weight: bold;
+	font-size: 20pt;
+	color: black;
+	position: relative;
+	top: 5px;
+	padding:10px;
+	
+}
+
+/**
+.panel{
+	width:400px;
+}*/
+/**
+.debugs{
+	position:absolute;
+	left:10px;
+	bottom: 10px
+}*/

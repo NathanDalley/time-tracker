@@ -42,6 +42,10 @@ class TimeUnitResource(ModelResource):
         authorization = DjangoAuthorization()
         #authentication = SessionAuthentication()
         always_return_data = True
+        filtering = {
+            "checkedIn": ['gte'],
+            "checkedOut": ['lte']
+        }
 
     def determine_format(self, request):
         return 'application/json'
