@@ -1,5 +1,5 @@
 
-var app = angular.module('timekeeper', ['ngRoute', 'ttService']);
+var app = angular.module('timekeeper', ['ngRoute', 'ngCookies', 'ttService']);
 
 
 //Setup RouteProvider
@@ -29,7 +29,15 @@ app.config(['$routeProvider', function ($routeProvider) {
         controller: 'WeekController',
         templateUrl: 'app/partials/Week.html'
     })
+    .when('/Login', {
+        redirectTo: 'http://127.0.0.1/accounts/login/' 
+    })
 
-    .otherwise({ redirectTo: '/' });
+    .otherwise({ redirectTo: '/ListUsers' });
 
+}]);
+
+app.run(['$http', '$cookies', 'TimerService', function($http, $cookies, TimerService){
+    //TimerService.init();
+    $http.defaults.headers.post['X-CSRFToken'] = $cookies.csrftoken;
 }]);

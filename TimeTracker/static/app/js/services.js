@@ -1,5 +1,36 @@
 var ttService = angular.module('ttService', ['ngResource','ng']);
 
+/**  LoginService
+* Checks and tracks to see if the user has logged in
+*
+*/
+
+ttService.factory('LoginService', ['$cookies', function($cookies){
+  
+  //var isLoggedIn = false;
+  var user = {
+    name: '',
+    id: ''
+  };
+
+  function isLoggedIn(){
+    if($cookies.username && $cookies.username !== 'none'){
+      user.name = $cookies.username;
+      return true;
+    }
+
+    user.name = '';
+    return false;
+  };
+  
+  return{
+    user : user,
+    isLoggedIn : isLoggedIn
+  };
+
+}]);
+
+
 /** TimerService
  * This service will contain the current known state of the users timer.
  * It will manage any updates that are required and should be treated as a single point of reference for the app

@@ -1,4 +1,5 @@
-<div class="panel panel-default">
+
+<div ng-show="login.isLoggedIn()" class="panel panel-default">
     <div class="panel-body">
         <div class="main pagination-centered">
             <new-Timer start-Time="{{ timer.startTime }}" end-Time="{{ timer.endTime }}" state="{{ timer.state }}"></new-Timer><br />
@@ -9,24 +10,3 @@
         </div>
     </div>
 </div>
-
-<div class="debugs">
-Debug <input type="checkbox" ng-model="showDebug">
-    <div ng-show="showDebug">
-        <pre><code>
-            <H3>DEBUG Woo!@</H3><br />
-            <button ng-click="update()">Update</button><br />
-            State: {{ timer.state }}<br />
-            Checked In: {{ timer.startTime }}<br />
-            Checked Out: {{ timer.endTime }}<br />
-
-            <h3>myState: </h3>{{ timer }}<br />
-
-
-            <h3>Stuff: </h3>{{ stuff }}<br />
-
-            <h3>Junk: </h3>
-            {{ junk }}
-        </code></pre>
-    </div>
-</div>  

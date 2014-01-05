@@ -1,23 +1,10 @@
-<div class="panel panel-default">
+<div ng-show="login.isLoggedIn()" class="panel panel-default">
     <div class="panel-body">
-    	<h3>{{today}}</h3>
+    	<h3>Today - {{today}}</h3>
 		<ul class="list-group">
 			<li class="tu list-group-item" ng-repeat="s in stuff.objects">
-				<time-object time-unit="s"></thing>
+				<time-object time-unit="s"></time-object>
 			</li>
 		</ul>
-
-	    
-
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-body">
-    	<h3>debug</h3>
-
-	    TODAY STUFF</br>
-	    {{stuff}}</br>
-
     </div>
 </div>

@@ -38,27 +38,31 @@
 	color: black;
 	font-weight: bolder;
 	font-size: 10pt;
-	position: relative;
-	
+	position: absolute;
+	left: 230pt;
+	top: 20pt
 }
 
 .tu-data-duration{
 	font-weight: bold;
 	font-size: 20pt;
 	color: black;
-	position: relative;
-	top: 5px;
-	padding:10px;
-	
+	position: absolute;
+	top: 17px;
+	left: 280pt;
 }
 
-/**
-.panel{
-	width:400px;
-}*/
-/**
-.debugs{
-	position:absolute;
-	left:10px;
-	bottom: 10px
-}*/
+.duration li{
+	font-weight: bold;
+	font-size: 14pt;
+	color:black;
+}
+
+.duration duration{
+	color: black;
+	position: absolute;
+	left: 120pt
+}
+.duration .nohours{
+	color: silver;
+}

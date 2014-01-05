@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-cookies.js"></script>
 
     <script src="{% static "app/js/services.js" %}"></script>
 
@@ -20,14 +21,27 @@
 
     {% verbatim %}
 
-    <div class="row">
-        <!--<div class="col-md-4"></div>-->
+    <div ng-controller="LoginController">
 
+        <div ng-show="login.isLoggedIn()">
+        
+            <div class="row">
+                <div ng-view></div>
+            </div>
 
-                    <div ng-view></div>
+        </div>
 
-            
+        <div ng-show="!login.isLoggedIn()">
+            You must log in.</br>
+            <a href="/accounts/login/"><button class="btn button-default">Login</button></a>
+            <a href="/accounts/register/"><button class="btn button-default">Register</button></a>
+        </div>
+
+        
+
     </div>
+
+    
 </div>
 {% endverbatim %}
 {% endblock %}

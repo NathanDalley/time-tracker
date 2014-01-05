@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView
 from django.conf import settings
+from timekeeper import views
 
 from models import TimeUnit
 
@@ -9,7 +10,8 @@ info_dict = {
 }
 
 urlpatterns = patterns('',
-    url(r'^$', TemplateView.as_view(template_name="timekeeper/index.html")),
+    #url(r'^$', TemplateView.as_view(template_name="timekeeper/index.html")),
+    url(r'^$', views.home),
     url(r'^app/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': settings.STATIC_NG_URL}),
 

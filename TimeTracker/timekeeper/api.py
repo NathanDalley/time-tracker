@@ -43,8 +43,7 @@ class TimeUnitResource(ModelResource):
         #authentication = SessionAuthentication()
         always_return_data = True
         filtering = {
-            "checkedIn": ['gte'],
-            "checkedOut": ['lte']
+            "checkedIn": ['gte', 'lte']
         }
 
     def determine_format(self, request):
